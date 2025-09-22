@@ -14,9 +14,10 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.0",
+    "@rnmf/mobile": "^0.3.0",
     "@rnx-kit/align-deps": "^3.2.2",
-    "react": "18.3.1",
-    "react-native": "0.77.2",
+    "react": "^18.3.1",
+    "react-native": "^0.77.2",
     "react-native-gesture-handler": "^2.19.0",
     "react-native-reanimated": "^3.12.1"
   },
@@ -31,6 +32,7 @@
     "@react-native/eslint-config": "0.77.2",
     "@react-native/metro-config": "0.77.2",
     "@react-native/typescript-config": "0.77.2",
+    "@rnmf/preset": "^1.1.1",
     "@types/jest": "^29.5.13",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
@@ -50,11 +52,18 @@
     "node": ">=18"
   },
   "rnx-kit": {
-    "kitType": "app",              
+    "kitType": "app",
     "alignDeps": {
-      "presets": ["@rnmf/preset"],     
-      "requirements": ["react-native@0.77 || 0.81"], 
-      "capabilities": ["core", "react"]
+      "presets": [
+        "@rnmf/preset"
+      ],
+      "requirements": [
+        "react-native@0.77"
+      ],
+      "capabilities": [
+        "core",
+        "react"
+      ]
     }
   }
 }
