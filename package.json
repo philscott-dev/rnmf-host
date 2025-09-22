@@ -52,8 +52,8 @@
   "rnx-kit": {
     "kitType": "app",              
     "alignDeps": {
-      "presets": ["@rnmf/preset-host-x"],     
-      "requirements": ["react-native@0.77"], 
+      "presets": ["@rnmf/preset"],     
+      "requirements": ["react-native@0.77 || 0.81"], 
       "capabilities": ["core", "react"]
     }
   }
